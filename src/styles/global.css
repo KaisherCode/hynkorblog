@@ -1,0 +1,32 @@
+:root{
+	--accent:#fd78ce;
+	--accent-dark: #1e2960 ;
+	--accent-light:#d4eefa;
+	--accent-purple:#4c1d95;
+	--accent-white:#fff;
+	--accent-gradient: linear-gradient(
+    45deg,
+    rgb(var(--accent)),
+    rgb(var(--accent-light)) 30%,
+    white 60%);
+}
+*{
+	box-sizing: border-box;
+}
+html{
+background-color: #f1f5f9;
+font-family: 'DM Sans', system-ui;
+}
+
+body {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 80ch;
+  padding: 1rem;
+  line-height: 1.5;
+}
+
+h1 {
+  margin: 1rem 0;
+  font-size: 2.5rem;
+}
