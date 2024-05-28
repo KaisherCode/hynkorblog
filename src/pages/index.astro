@@ -1,6 +1,7 @@
 ---
-const pageTiple = "Página de inicio"
-import "../styles/global.css"
+const pageTiple = "Página de inicio";
+import Navigation from "../components/Navigation.astro";
+import "../styles/global.css";
 ---
 
 <html lang="en">
@@ -12,9 +13,7 @@ import "../styles/global.css"
 		<title>{pageTiple}</title>
 	</head>
 	<body>
-		<a href="/">Inicio</a>
-		<a href="/about/">Sobre mí</a>
-		<a href="/blog/">Blog</a>
+		<Navigation/>
 		<h1>{pageTiple}</h1>
 	</body>
 </html>
