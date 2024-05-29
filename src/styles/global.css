@@ -31,6 +31,12 @@ h1 {
 	margin: 1rem 0;
 	font-size: 2.5rem;
 }
+h2{
+	font-size: 2rem;
+	color: var(--accent-dark);
+	font-weight: bold;
+	text-align: center;
+}
 
 /* Estilos de la barra de navegación */
 .hamburger {
