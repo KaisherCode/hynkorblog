@@ -4,8 +4,11 @@ import Hamburger from "@/components/Hamburger.astro";
 ---
 
 <header>
-	<nav>
+	<nav class="flex items-center justify-between mb-2">
+		<a href="/" class="text-2xl font-bold uppercase">Hynkor</a>
 		<Hamburger/>	
 		<Navigation/>
 	</nav>
+	<hr class="top-0 h-[2px] w-full min-w-[18rem] border-t-0 bg-transparent bg-gradient-to-r from-transparent via-purple-500 to-transparent bg-center md:my-9">
 </header>
+
