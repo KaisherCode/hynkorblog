@@ -1,74 +1,95 @@
-:root{
-	--accent:#fd78ce;
-	--accent-dark: #1e2960 ;
-	--accent-light:#d4eefa;
-	--accent-purple:#4c1d95;
-	--accent-white:#fff;
-	--accent-gradient: linear-gradient(
-    45deg,
-    rgb(var(--accent)),
-    rgb(var(--accent-light)) 30%,
-    white 60%);
+:root {
+	--accent: #fd78ce;
+	--accent-dark: #1e2960;
+	--accent-light: #d4eefa;
+	--accent-gray: rgb(177, 176, 176);
+	--accent-white: #fff;
+	--accent-gradient: linear-gradient(45deg,
+			rgb(var(--accent)),
+			rgb(var(--accent-light)) 30%,
+			white 60%);
 }
-*{
+
+* {
 	box-sizing: border-box;
 }
-html{
-background-color: #f1f5f9;
-font-family: 'DM Sans', system-ui;
+
+html {
+	background-color: #f1f5f9;
+	font-family: 'DM Sans', system-ui;
 }
 
 body {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 80ch;
-  padding: 1rem;
-  line-height: 1.5;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 80ch;
+	padding: 1rem;
+	line-height: 1.5;
 }
 
 h1 {
-  margin: 1rem 0;
-  font-size: 2.5rem;
+	margin: 1rem 0;
+	font-size: 2.5rem;
 }
 
 /* Estilos de la barra de navegación */
-.nav-links{
-	top: 5rem;
-	left: 48px;
-	width: 100%;
-	background-color: #ff9776;
-	margin: 0;
-	display: none;
+.hamburger {
+	cursor: pointer;
+	padding-right: 20px;
 }
 
-.nav-links a{
+.hamburger .line {
+	display: block;
+	background-color: var(--accent-gray);
+	width: 36px;
+	height: 4px;
+	margin-bottom: 6px;
+	border-radius: 8px;
+}
+
+.nav-links {
+	width: 100%;
+	top: 5rem;
+	left: 48px;
+	background-color: #ff9776;
+	display: none;
+	margin: 0;
+}
+
+.nav-links a {
 	display: block;
 	text-align: center;
 	padding: 10px 0;
 	text-decoration: none;
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	font-weight: bold;
 	text-transform: uppercase;
 }
 
 .nav-links a:hover,
-.nav-links a:focus{
+.nav-links a:focus {
 	background-color: #ff9776;
 }
 
-.expander{
+.expanded {
 	display: unset;
 }
+
 @media screen and (min-width: 636px) {
-	.nav-links{
+	.nav-links {
 		display: block;
 		width: auto;
 		position: static;
 		background: none;
 		margin-left: 5em;
 	}
-	.nav-links a{
+
+	.nav-links a {
 		display: inline-block;
 		padding: 15px 20px;
+	}
+
+	.hamburger {
+		display: none;
 	}
 }
