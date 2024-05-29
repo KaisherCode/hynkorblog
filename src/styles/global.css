@@ -4,8 +4,9 @@
 	--accent-light: #d4eefa;
 	--accent-gray: rgb(177, 176, 176);
 	--accent-white: #fff;
-	--accent-gradient: linear-gradient(45deg,
-			rgb(var(--accent)),
+	--accent-gradient: linear-gradient(
+			45deg,
+			rgb(var(--accent-dark)),
 			rgb(var(--accent-light)) 30%,
 			white 60%);
 }
@@ -42,7 +43,6 @@ h2{
 /* Estilos de la barra de navegación */
 .hamburger {
 	cursor: pointer;
-	padding-right: 20px;
 }
 
 .hamburger .line {
@@ -73,11 +73,13 @@ h2{
 	text-transform: uppercase;
 }
 
-.nav-links a:hover,
-.nav-links a:focus {
-	background-color: #ff9776;
+nav p{
+	color: var(--accent-dark);
 }
 
+header{
+	padding: 8px;
+}
 .expanded {
 	display: unset;
 }
@@ -88,7 +90,6 @@ h2{
 		width: auto;
 		position: static;
 		background: none;
-		margin-left: 5em;
 	}
 
 	.nav-links a {
