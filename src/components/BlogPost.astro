@@ -1,5 +1,10 @@
 ---
-const { url, title } = Astro.props;
+const { url, title,description,author,pubDate,image,tag } = Astro.props;
 ---
-
-<li><a href={url}>{title}</a></li>
+<ul class="pt-5">
+      <li><a href={url}><img src={image} alt="" class="rounded-lg" /></a></li>
+      <li><a href={url} class=" font-bold text-2xl">{title}</a></li>
+      <li class=" uppercase"><span class=" font-light">Escrito por: </span>{author}</li>
+      <li class=" uppercase"><span class=" font-light">Publicado: </span>{pubDate}</li>
+      <li class="flex flex-wrap"><em>{description}</em></li>
+</ul>
