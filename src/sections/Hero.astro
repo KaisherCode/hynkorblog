@@ -2,12 +2,12 @@
 import Greeting from "@/components/Greeting";
 
 ---
-<section class="lg:flex w-full lg:h-[500px] justify-evenly items-center gap-5">
-	<div class="m-5 w-full">
+<section class="lg:flex w-full lg:h-[500px] justify-evenly items-center lg:gap-5 lg:pt-0 pt-5">
+	<div class=" w-full">
 		<!-- <Greeting messages={["Hola", "Qué tal", "Hola a todos"]} /> -->
 		<Greeting client:load messages={["Hi", "Astronaut", "Hello", "Ghost"]} />
 		<h2 class="mb-5 text-3xl font-extrabold">My first <span class=" text-pink-500">Astro Blog</span></h2>
-		<p>
+		<p class=" pb-5">
 			I'm working on the Astro introductory tutorial. This is the first page of my website, and it's the first one I've built myself! This site will be updated as I complete more parts of the tutorial, so be sure to check back to see how my journey is going!
 		</p>
 	</div>
@@ -16,7 +16,7 @@ import Greeting from "@/components/Greeting";
 			style="mask-image: linear-gradient(to bottom, #f1f5f9 80%, transparent 100%);
 			filter:drop-shadow(0 0 5px rgba(0,0,0,.5));"
 			src="https://images.unsplash.com/photo-1608306448197-e83633f1261c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fGRldmVsb3BlcnxlbnwwfHwwfHx8MA%3D%3D"
-			alt="" class="pb-5 rounded-lg"
+			alt="" class="lg:pb-0 pb-5 rounded-lg"
 		/>
 	</div>
 </section>
