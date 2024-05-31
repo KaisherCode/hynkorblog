@@ -7,7 +7,7 @@ const identity = {
 	firsName: "Kaisher",
 	country: "Lima-Perú",
 	ocupation: "Web Development",
-	hobbies: ["fotografía", "viajes", "fútbol"],
+	hobbies: ["photography", "travel", "soccer"],
 };
 
 const skills = [
@@ -16,7 +16,7 @@ const skills = [
 	"JavaScript",
 	"React",
 	"Astro",
-	"Redacción de documentos",
+	"Writing document",
 ];
 
 const happy = true;
@@ -31,18 +31,18 @@ const goal = 3;
 	<h2 class=" font-extrabold text-2xl mb-2">
 		I am professional <span class="text-pink-500">in Computer Science</span> 
 	</h2>
-  <p>Mi nombre es <span class=" font-semibold">{identity.firsName},</span> vivo en {identity.country}
-    y trabajo como {identity.ocupation}. Me gusta construir aplicaciones y sitios web atractivos.</p>
+  <p>My name is <span class=" font-semibold">{identity.firsName},</span> I live in {identity.country}
+    I work as a {identity.ocupation}. I like to build atractive applications and websites.</p>
 	<ul>
 		{
 			identity.hobbies.length > 2 && (
 				<li>
-					Dos de mis aficiones son: <a href="/" class="font-medium">{identity.hobbies[0]}</a> y <a href="/" class="font-medium">{identity.hobbies[1]}</a>
+					Two of my hobbies are: <a href="/" class="font-medium">{identity.hobbies[0]}</a> y <a href="/" class="font-medium">{identity.hobbies[1]}</a>
 				</li>
 			)
 		}
 	</ul>
-	<h3 class=" font-semibold text-lg mt-2">Mis habilidades son:</h3>
+	<h3 class=" font-semibold text-lg mt-2">My skills:</h3>
 	<ul class="flex flex-wrap gap-2 mt-2">
 		{skills.map((skill) => <li class=" rounded-lg p-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold mb-1">{skill}</li>)}
 	</ul>
