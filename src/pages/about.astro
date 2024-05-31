@@ -25,37 +25,27 @@ const goal = 3;
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-	<p class="text-justify">
-		Estoy trabajando en el tutorial introductorio de Astro. Esta es la segunda
-		página de mi sitio web, ¡y es la primera que he construido yo mismo!
-	</p>
-	<p class="text-justify">
-		Este sitio se irá actualizando a medida que vaya completando más partes del
-		tutorial, ¡así que no dejes de visitarlo para ver cómo va mi viaje!
-	</p>
-	<p>He aquì algunos datos sobre mi:</p>
+  <div class="lg:flex">
+  <img src="https://images.unsplash.com/photo-1589424214513-b672297bf8c4?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG11amVyZXMlMjBib25pdGFzfGVufDB8fDB8fHww" alt="" class="lg:w-[50%] mt-2 rounded-lg">
+  <section class="p-5">
+	<h2 class=" font-extrabold text-2xl mb-2">
+		I am professional <span class="text-pink-500">in Computer Science</span> 
+	</h2>
+  <p>Mi nombre es <span class=" font-semibold">{identity.firsName},</span> vivo en {identity.country}
+    y trabajo como {identity.ocupation}. Me gusta construir aplicaciones y sitios web atractivos.</p>
 	<ul>
-		<li>Mi nombre es {identity.firsName}</li>
-		<li>Vivo en {identity.country} y trabjo como {identity.ocupation}</li>
 		{
 			identity.hobbies.length > 2 && (
 				<li>
-					Dos de mis aficiones son {identity.hobbies[0]} y {identity.hobbies[1]}
+					Dos de mis aficiones son: <a href="/" class="font-medium">{identity.hobbies[0]}</a> y <a href="/" class="font-medium">{identity.hobbies[1]}</a>
 				</li>
 			)
 		}
 	</ul>
-	<p>Mis habilidades son:</p>
-	<ul>
-		{skills.map((skill) => <li>{skill}</li>)}
+	<h3 class=" font-semibold text-lg mt-2">Mis habilidades son:</h3>
+	<ul class="flex flex-wrap gap-2 mt-2">
+		{skills.map((skill) => <li class=" rounded-lg p-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold mb-1">{skill}</li>)}
 	</ul>
-	{happy && <p>¡Estoy feliz de aprender Astro!</p>}
-	{finished && <p>¡He terminado este tutorial!</p>}
-	{
-		goal === 3 ? (
-			<p>Mi objetivo es terminar en 3 días.</p>
-		) : (
-			<p>Mi objetivo no son 3 días.</p>
-		)
-	}
+  </section>
+  </div>
 </BaseLayout>
