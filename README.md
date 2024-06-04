@@ -1,47 +1,37 @@
-# Astro Starter Kit: Minimal
+# Blog de Hynkor
 
-```sh
-npm create astro@latest -- --template minimal
-```
+Hynkor es una empresa dedicada a la venta y distribución de productos informáticos; Hardware, software y más.
+## Capturas de pantalla
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+![captura de pantall en ordenador]()
+![captura de pantall en mobile]()
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Instalación
 
-## 🚀 Project Structure
+1. Clona el repositorio
 
-Inside of your Astro project, you'll see the following folders and files:
+    `git clone https://github.com/KaisherCode/hynkorblog.git`
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+2. Instala los paquetes de NPM
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+    `npm install`
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+3. Ejecuta el proyecto
 
-Any static assets, like images, can be placed in the `public/` directory.
+    `npm run dev`
 
-## 🧞 Commands
+## 🧞 Commandos
 
-All commands are run from the root of the project, from a terminal:
+Todos los comandos se ejecutan desde la raíz del proyecto, desde un terminal:
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+| Commando                   | Acción                                                       |
+| :------------------------  | :-----------------------------------------------------       |
+| `npm install`              | Instala las dependencias                                     |
+| `npm run dev`              | Inicia el servidor de desarrollo local en `localhost:4321`   |
+| `npm run build`            | Construya su sitio de producción para `./dist/`              |
+| `npm run preview`          | Previsualice su compilación localmente, antes de desplegarla |
+| `npm run astro ...`        | Ejecute comandos CLI como `astro add`, `astro check`         |
+| `npm run astro -- --help`  | Ayuda para utilizar Astro CLI                                |
 
-## 👀 Want to learn more?
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
