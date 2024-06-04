@@ -8,13 +8,21 @@ const pageTitle = "Mi blog de aprendizaje";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-	<h2 class="pl-5 pr-5">{pageTitle}</h2>
+	<h2 class="font-extrabold text-2xl mb-2 pl-5 pr-5">{pageTitle}</h2>
 	<p class="pl-5 pr-5">Aquí es donde publicaré sobre mi viaje de aprendizaje Astro.</p>
 	<section class="p-5 justify-center">
       <article class="lg:grid grid-cols-2 gap-4" >
         {
           allPosts.map((post) => (
-            <BlogPost image={post.data.image.url} url={`/posts/${post.slug}/`} title={post.data.title} description={post.data.description} author={post.data.author} pubDate={post.data.pubDate.toString().slice(0,10)} tag={post.data.tags}/>
+            <BlogPost 
+              image={post.data.image.url} 
+              url={`/posts/${post.slug}/`} 
+              title={post.data.title} 
+              description={post.data.description} 
+              author={post.data.author} 
+              pubDate={post.data.pubDate.toString().slice(0,10)} 
+              tag={post.data.tags}
+            />
           ))
         }
       </article>
