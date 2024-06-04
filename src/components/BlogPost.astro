@@ -4,7 +4,8 @@ const { url, title,description,author,pubDate,image } = Astro.props;
 <ul class="pt-5">
       <li><a href={url}><img src={image} alt="" class="rounded-lg" /></a></li>
       <li><a href={url} class=" font-bold text-2xl">{title}</a></li>
-      <li class=" uppercase"><span class=" font-light">Escrito por: </span>{author}</li>
-      <li class=" uppercase"><span class=" font-light">Publicado: </span>{pubDate}</li>
+      <li ><span class=" font-light">Escrito por: </span>{author}</li>
+      <li ><span class=" font-light">Publicado: </span>{pubDate}</li>
       <li class="flex flex-wrap"><em>{description}</em></li>
 </ul>
+ 
