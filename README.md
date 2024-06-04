@@ -3,8 +3,8 @@
 Hynkor es una empresa dedicada a la venta y distribución de productos informáticos; Hardware, software y más.
 ## Capturas de pantalla
 
-![captura de pantall en ordenador]()
-![captura de pantall en mobile]()
+![captura de pantalla en ordenador](https://hynkor.com/wp-content/uploads/2024/06/Captura-de-pantalla-hynkorblog-desktop.png)
+
 
 ## Instalación
 
