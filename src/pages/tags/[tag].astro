@@ -1,6 +1,6 @@
 ---
 import { getCollection } from "astro:content";
-import BlogPost from "@/components/BlogPost.astro";
+import Tags from "@/components/Tags.astro";
 import BaseLayout from "@/layouts/BaseLayout.astro";
 
 export async function getStaticPaths() {
@@ -24,11 +24,12 @@ const { posts } = Astro.props;
 ---
 
 <BaseLayout pageTitle={tag}>
-	<p>Entradas etiquetadas con {tag}</p>
+	<h2 class="font-extrabold text-2xl">Entradas etiquetadas con {tag}</h2>
 	<ul>
 		{
 			posts.map((post) => (
-				<BlogPost url={`/posts/${post.slug}/`} title={post.data.title} />
+				// <BlogPost url={`/posts/${post.slug}/`} title={post.data.title} />
+				<Tags url={`/posts/${post.slug}`} title={post.data.title}/>
 			))
 		}
 	</ul>
