@@ -79,7 +79,7 @@ header{
 }
 /* Estilos css para dark mode*/
 html.dark {
-  background-color: #0d0950;
+  background-color: #1d1c1c;
   color: #fff;
 }
 
