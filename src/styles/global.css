@@ -27,11 +27,14 @@ body {
 
 .hamburger .line {
   display: block;
-  background-color: var(--accent-gray);
+  background-color: black;
   width: 36px;
   height: 4px;
   margin-bottom: 6px;
   border-radius: 8px;
+}
+.dark .hamburger .line{
+  background-color: #fff;
 }
 
 .nav-links {
