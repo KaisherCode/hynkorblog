@@ -1,9 +1,18 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import Hero from "@/sections/Hero.astro";
-const pageTitle = "Página de inicio";
+import SectionContainer from "@/components/SectionContainer.astro";
 ---
 
-<BaseLayout pageTitle={pageTitle}>
-	<Hero/>
+<BaseLayout
+  title="Portfolio de kaisherdev - Desarrollador y programador web" 
+  description="contacta a kaisherdev para crear tu aplicación web o móvil. Experto en crear aplicaciones únicas"
+  >
+  <main class="px-4 dark:text-white">
+    <SectionContainer class="py-14 md:py-36">
+      <Hero>
+        <slot/>
+      </Hero>
+    </SectionContainer>
+  </main>
 </BaseLayout>
