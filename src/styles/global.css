@@ -17,6 +17,7 @@
 html {
   background-color: #f1f5f9;
   font-family: 'DM Sans', system-ui;
+  scroll-behavior: smooth;
 }
 
 body {
