@@ -1,82 +1,83 @@
 :root {
-	--accent: #fd78ce;
-	--accent-dark: #1e2960;
-	--accent-light: #d4eefa;
-	--accent-gray: rgb(177, 176, 176);
-	--accent-white: #fff;
-	--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent-dark)),
-			rgb(var(--accent-light)) 30%,
-			white 60%);
+  --accent: #fd78ce;
+  --accent-dark: #1e2960;
+  --accent-light: #d4eefa;
+  --accent-gray: rgb(177, 176, 176);
+  --accent-white: #fff;
+  --accent-gradient: linear-gradient(45deg,
+      rgb(var(--accent-dark)),
+      rgb(var(--accent-light)) 30%,
+      white 60%);
 }
 
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-	background-color: #f1f5f9;
-	font-family: 'DM Sans', system-ui;
+  background-color: #f1f5f9;
+  font-family: 'DM Sans', system-ui;
 }
 
 body {
-	margin: 0 auto;
-	width: 100%;
-	max-width: 80ch;
-	padding: 1rem;
-	line-height: 1.5;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 80ch;
+  padding: 1rem;
+  line-height: 1.5;
 }
 
 h1 {
-	font-size: 2.5rem;
-	text-align: center;
-	font-weight: bold;
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: bold;
 }
 
 /* Estilos de la barra de navegación */
 .hamburger {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .hamburger .line {
-	display: block;
-	background-color: var(--accent-gray);
-	width: 36px;
-	height: 4px;
-	margin-bottom: 6px;
-	border-radius: 8px;
+  display: block;
+  background-color: var(--accent-gray);
+  width: 36px;
+  height: 4px;
+  margin-bottom: 6px;
+  border-radius: 8px;
 }
 
 .nav-links {
-	width: 100%;
-	top: 5rem;
-	left: 48px;
-	background-color: #ff9776;
-	display: none;
-	margin: 0;
+  position: absolute;
+  width: 100%;
+  top: 4rem;
+  left: 0;
+  background-color: white;
+  display: none;
 }
 
 .nav-links a {
-	display: block;
-	text-align: center;
-	padding: 10px 0;
-	text-decoration: none;
-	font-size: 1.2rem;
-	font-weight: bold;
-	text-transform: uppercase;
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
-nav p{
-	color: var(--accent-dark);
+nav p {
+  color: var(--accent-dark);
 }
 
-header{
-	padding: 8px;
+header {
+  padding: 8px;
 }
+
 .expanded {
-	display: unset;
+  display: unset;
 }
+
 /* Estilos css para dark mode*/
 html.dark {
   background-color: #1d1c1c;
@@ -88,19 +89,19 @@ html.dark {
 }
 
 @media screen and (min-width: 636px) {
-	.nav-links {
-		display: block;
-		width: auto;
-		position: static;
-		background: none;
-	}
+  .nav-links {
+    display: block;
+    width: auto;
+    position: static;
+    background: none;
+  }
 
-	.nav-links a {
-		display: inline-block;
-		padding: 15px 20px;
-	}
+  .nav-links a {
+    display: inline-block;
+    padding: 15px 20px;
+  }
 
-	.hamburger {
-		display: none;
-	}
+  .hamburger {
+    display: none;
+  }
 }
