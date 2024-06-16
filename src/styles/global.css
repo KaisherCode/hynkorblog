@@ -40,10 +40,23 @@ body {
 .nav-links {
   position: absolute;
   width: 100%;
+  height: 100vh;
   top: 4rem;
   left: 0;
   background-color: white;
   display: none;
+  z-index: 10;
+}
+
+.dark .nav-links{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 4rem;
+  left: 0;
+  background-color: black;
+  z-index: 10;
+  color: white;
 }
 
 .nav-links a {
