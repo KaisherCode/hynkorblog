@@ -1,7 +1,7 @@
 ---
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import "@/styles/global.css";
-const pageTitle = "Sobre mi";
+const { title, description } = Astro.props;
 
 const identity = {
 	firsName: "Kaisher",
@@ -24,35 +24,57 @@ const finished = false;
 const goal = 3;
 ---
 
-<BaseLayout pageTitle={pageTitle}>
-  <div class="lg:flex">
-  <img src="https://images.unsplash.com/photo-1546146830-2cca9512c68e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fGRldmVsb3BlcnxlbnwwfHwwfHx8MA%3D%3D" alt="" class="lg:w-[50%] mt-2 rounded-lg">
-  <section class="p-5">
-	<h2 class=" font-extrabold text-2xl mb-2">
-		I am professional <span class="text-pink-500">in Computer Science</span> 
-	</h2>
-  <p>My name is <span class=" font-semibold">{identity.firsName},</span> I live in {identity.country}
-    I work as a {identity.ocupation}. I like to build atractive applications and websites.</p>
-	<ul>
-		{
-			identity.hobbies.length > 2 && (
-				<li>
-					Two of my hobbies are: <a href="/" class="font-medium">{identity.hobbies[0]}</a> y <a href="/" class="font-medium">{identity.hobbies[1]}</a>
-				</li>
-			)
-		}
-	</ul>
-	<h3 class=" font-semibold text-lg mt-2">My skills:</h3>
-	<ul class="flex flex-wrap gap-2 mt-2">
-		{skills.map((skill) => <li class=" rounded-lg p-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold mb-1">{skill}</li>)}
-	</ul>
-  </section>
-  </div>
+<BaseLayout
+	title="Sobre mí"
+	description="contacta a kaisherdev para crear tu aplicación web o móvil. Experto en crear aplicaciones únicas"
+>
+	<div class="lg:flex">
+		<img
+			src="https://images.unsplash.com/photo-1546146830-2cca9512c68e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fGRldmVsb3BlcnxlbnwwfHwwfHx8MA%3D%3D"
+			alt=""
+			class="lg:w-[50%] mt-2 rounded-lg"
+		/>
+		<section class="p-5">
+			<h2 class="font-extrabold text-2xl mb-2">
+				I am professional <span class="text-pink-500">in Computer Science</span>
+			</h2>
+			<p>
+				My name is <span class="font-semibold">{identity.firsName},</span> I live
+				in {identity.country}
+				I work as a {identity.ocupation}. I like to build atractive applications
+				and websites.
+			</p>
+			<ul>
+				{
+					identity.hobbies.length > 2 && (
+						<li>
+							Two of my hobbies are:{" "}
+							<a href="/" class="font-medium">
+								{identity.hobbies[0]}
+							</a>{" "}
+							y{" "}
+							<a href="/" class="font-medium">
+								{identity.hobbies[1]}
+							</a>
+						</li>
+					)
+				}
+			</ul>
+			<h3 class="font-semibold text-lg mt-2">My skills:</h3>
+			<ul class="flex flex-wrap gap-2 mt-2">
+				{
+					skills.map((skill) => (
+						<li class=" rounded-lg p-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white font-semibold mb-1">
+							{skill}
+						</li>
+					))
+				}
+			</ul>
+		</section>
+	</div>
 </BaseLayout>
 <style>
-	img{
-		filter: drop-shadow(
-			0 0 10px rgba(0,0,0,.8)
-		);
+	img {
+		filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.8));
 	}
 </style>
