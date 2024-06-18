@@ -26,8 +26,64 @@ const { title, description } = Astro.props;
 		<Header />
 		<slot />
 		<Footer />
-		<script>
-			import "@/scripts/menu.js";
-		</script>
+		
 	</body>
 </html>
+<script>
+  import "@/scripts/menu.js";
+</script>
+<style is:global>
+  :root {
+    color-scheme: light dark;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    background-color: #f1f5f9;
+    font-family: "DM Sans", system-ui;
+    scroll-behavior: smooth;
+  }
+
+  /* Estilos css para dark mode*/
+  html.dark {
+    background-color: #1d1c1c;
+    color: #fff;
+  }
+
+  body {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 80ch;
+    padding: 1rem;
+    line-height: 1.5;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .expanded {
+    display: unset;
+  }
+  
+@media screen and (min-width: 636px) {
+.nav-links {
+display: block;
+width: auto;
+position: static;
+background: none;
+}
+
+.nav-links a {
+display: inline-block;
+padding: 15px 20px;
+}
+
+.hamburger {
+display: none;
+}
+}
+</style>
