@@ -2,15 +2,19 @@
 import Navigation from "@/components/Navigation.astro";
 import Hamburger from "@/components/Hamburger.astro";
 import ThemeIcon from "@/components/ThemeIcon.astro";
+import CodeBracketIcon from "@/icons/codeBracket.astro";
 ---
 
-<header>
+<header class="p-2">
 	<nav class="flex items-center justify-between mb-2">
-		<a href="/" aria-hidden="true" class="hidden text-2xl font-bold uppercase lg:block">Hynkor</a>
-		<Hamburger/>	
-		<Navigation/>
-		<ThemeIcon/>
+		<a href="/" aria-hidden="true" class="hidden lg:block"
+			><CodeBracketIcon /></a
+		>
+		<Hamburger />
+		<Navigation />
+		<ThemeIcon />
 	</nav>
-	<hr class="top-0 h-[2px] w-full min-w-[18rem] border-t-0 bg-transparent bg-gradient-to-r from-transparent via-purple-500 to-transparent bg-center md:my-9">
+	<hr
+		class="top-0 h-[2px] w-full min-w-[18rem] border-t-0 bg-transparent bg-gradient-to-r from-transparent via-purple-500 to-transparent bg-center md:my-9"
+	/>
 </header>
-
