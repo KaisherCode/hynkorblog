@@ -2,6 +2,8 @@
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import Hero from "@/sections/Hero.astro";
 import SectionContainer from "@/components/SectionContainer.astro";
+import Experience from "@/components/Experience.astro";
+import BriefCase from "@/icons/BriefCase.astro";
 ---
 
 <BaseLayout
@@ -13,6 +15,13 @@ import SectionContainer from "@/components/SectionContainer.astro";
       <Hero>
         <slot/>
       </Hero>
+    </SectionContainer>
+    <SectionContainer id="experiencia">
+      <h2 class=" flex items-center mb-6 text-3xl font-semibold gap-x-3 text-black/80 dark:text-white">
+        <BriefCase class="size-8"/>
+        Experiencia laboral
+      </h2>
+      <Experience/>
     </SectionContainer>
   </main>
 </BaseLayout>
