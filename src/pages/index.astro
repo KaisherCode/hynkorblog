@@ -4,6 +4,10 @@ import Hero from "@/sections/Hero.astro";
 import SectionContainer from "@/components/SectionContainer.astro";
 import Experience from "@/components/Experience.astro";
 import BriefCase from "@/icons/BriefCase.astro";
+import CodeBracket from "@/icons/codeBracket.astro";
+import Projects from "@/components/Projects.astro";
+import ProfileCheck from "@/icons/ProfileCheck.astro";
+import AboutMe from "@/components/AboutMe.astro";
 ---
 
 <BaseLayout
@@ -23,5 +27,14 @@ import BriefCase from "@/icons/BriefCase.astro";
       </h2>
       <Experience/>
     </SectionContainer>
+    <div class=" space-y-24">
+    <SectionContainer id="proyectos">
+      <h2 class="flex items-center mb-6 text-3xl font-semibold gap-x-3 text-blue-800 dark:text-white">
+        <CodeBracket class="size-8 text-black/80 dark:text-white"/>
+        Proyectos
+      </h2>
+      <Projects/>
+    </SectionContainer>
+  </div>
   </main>
 </BaseLayout>
