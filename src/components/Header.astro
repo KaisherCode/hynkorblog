@@ -1,20 +1,61 @@
 ---
-import Navigation from "@/components/Navigation.astro";
-import Hamburger from "@/components/Hamburger.astro";
 import ThemeIcon from "@/components/ThemeIcon.astro";
 import CodeBracketIcon from "@/icons/codeBracket.astro";
+
+const navItems = [
+	{
+		title: "Experiencia",
+		label: "experiencia",
+		url: "/#experiencia",
+	},
+	{
+		title: "Proyectos",
+		label: "proyectos",
+		url: "/#proyectos",
+	},
+	{
+		title: "Sobre mí",
+		label: "sobre-mi",
+		url: "/#sobre-mi",
+	},
+  {
+    title:"Blog",
+    label:"blog",
+    url:"/blog",
+  },
+];
 ---
 
-<header class="p-2">
-	<nav class="flex items-center justify-between mb-2">
-		<a href="/" aria-hidden="true" class="hidden lg:flex font-bold"
-			><CodeBracketIcon />kaisher</a
-		>
-		<Hamburger />
-		<Navigation />
-		<ThemeIcon />
+<header class=" mt-4 mb-16 justify-center flex items-center">
+	<nav aria-hidden="true" class="flex max-w-xl justify-center items-center fixed z-10 rounded-full lg:px-4 px-1">
+		<a href="/" aria-hidden="true" class="hidden lg:flex items-center font-bold text-lg text-blue-800 dark:text-white gap-x-1">
+      <CodeBracketIcon />
+      kaisher
+      </a>
+			{
+				navItems.map((link) => (
+					<a
+            aria-label={link.label}
+						href={link.url}
+						class="dark:text-white transition block text-center font-medium lg:p-2 p-1 hover:text-yellow-400 dark:hover:text-yellow-400"
+					>
+						{link.title}
+					</a>
+				))
+			}
+    <ThemeIcon />
 	</nav>
-	<hr
-		class="top-0 h-[2px] w-full min-w-[18rem] border-t-0 bg-transparent bg-gradient-to-r from-transparent via-purple-500 to-transparent bg-center md:my-9"
-	/>
 </header>
+
+<style>
+   nav {
+    animation: nav-shadown 1s linear both;
+    animation-timeline: scroll();
+    animation-range: 0 100px;
+  }
+  @keyframes nav-shadown {
+    to {
+      @apply shadow-lg ring-1 backdrop-blur dark:bg-gray-800/90 bg-white/50 ring-white/10;
+    }
+  }
+</style>
