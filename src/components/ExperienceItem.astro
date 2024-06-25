@@ -16,20 +16,20 @@ const { title, company, description, link, date } = Astro.props;
 >
 	<div class="relative pb-12 md:col-span-2">
 		<div class="sticky top-0">
-			<span class="text-yellow-400 -left-[44px] absolute rounded-full text-5xl"
+			<span class="text-indigo-500 -left-[44px] absolute rounded-full text-5xl"
 				>&bull;</span
 			>
-			<h3 class="text-xl font-bold text-yellow-400">{title}</h3>
-			<h4 class="font-semibold text-xl text-blue-800 dark:text-white">
+			<h3 class="text-xl font-bold text-indigo-500">{title}</h3>
+			<h4 class="font-semibold text-xl text-gray-500/80 dark:text-white">
 				{company}
 			</h4>
-			<time class="p-0 m-0 text-sm text-sky-800/80 dark:text-white/80"
+			<time class="p-0 m-0 text-sm text-indigo-500/80 dark:text-white/80"
 				>{date}</time
 			>
 		</div>
 	</div>
 	<div
-		class="realtive flex flex-col gap-2 pb-4 text-gray-600 dark:text-gray-300 md:col-span-3"
+		class="realtive flex flex-col gap-2 pb-4 text-gray-500/80 dark:text-gray-300 md:col-span-3"
 	>
 		{description}
 		{
