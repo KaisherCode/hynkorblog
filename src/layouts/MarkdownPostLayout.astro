@@ -15,7 +15,7 @@ const { title, description } = Astro.props;
 	/>
 
 	<h2 class="font-bold text-3xl">{frontmatter.title}</h2>
-	<p>
+	<article>
 		Publicado: {frontmatter.pubDate.toString().slice(3, 15)}<span>
 			| <span>Escrito por: <a href="/about/">{frontmatter.author}</a></span>
 		</span>
@@ -23,29 +23,20 @@ const { title, description } = Astro.props;
 			<em>{frontmatter.description}</em>
 		</p>
 
-		<div class="tags">
+		<div class="flex flex-wrap">
 			{
 				frontmatter.tags.map((tag) => (
 					<p class="tag">
-						<a href={`/tags/${tag}`}>{tag}</a>
+						<a class="text-indigo-500/80" href={`/tags/${tag}`}>{tag}</a>
 					</p>
 				))
 			}
 		</div>
 		<slot />
-	</p>
+	</article>
 </div>
 </BaseLayout>
 <style>
-	a {
-		color: #00539f;
-	}
-
-	.tags {
-		display: flex;
-		flex-wrap: wrap;
-	}
-
 	.tag {
 		margin: 0.25em;
 		border: dotted 1px #a1a1a1;
