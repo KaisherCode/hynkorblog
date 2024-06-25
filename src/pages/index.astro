@@ -14,35 +14,33 @@ import AboutMe from "@/components/AboutMe.astro";
   title="Portfolio de kaisherdev - Desarrollador y programador web" 
   description="contacta a kaisherdev para crear tu aplicación web o móvil. Experto en crear aplicaciones únicas"
   >
-  <main class="dark:text-white">
     <SectionContainer class="py-8 md:py-10">
       <Hero>
         <slot/>
       </Hero>
     </SectionContainer>
     <SectionContainer id="experiencia">
-      <h2 class=" flex items-center mb-6 text-3xl font-semibold gap-x-3 text-blue-800 dark:text-white">
+      <h2 class=" flex items-center mb-6 text-3xl font-semibold gap-x-3 text-indigo-500/80 dark:text-white">
         <BriefCase class="size-8 text-black/80 dark:text-white"/>
         
-        Experiencia <span class="text-sky-800/80 dark:text-sky-500">laboral</span>
+        Experiencia laboral
       </h2>
       <Experience/>
     </SectionContainer>
     <div class=" space-y-24">
     <SectionContainer id="proyectos">
-      <h2 class="flex items-center mt-6 mb-6 text-3xl font-semibold gap-x-3 text-blue-800 dark:text-white">
+      <h2 class="flex items-center mt-6 mb-6 text-3xl font-semibold gap-x-3 text-indigo-500/80 dark:text-white">
         <CodeBracket class="size-8 text-black/80 dark:text-white"/>
         Proyectos
       </h2>
       <Projects/>
     </SectionContainer>
     <SectionContainer id="sobre-mi">
-      <h2 class="flex mb-6 text-3xl font-semibold items-center gap-x-3 text-sky-800/80 dark:text-sky-500">
+      <h2 class="flex mb-6 text-3xl font-semibold items-center gap-x-3 text-indigo-500/80 dark:text-sky-500">
         <ProfileCheck class="size-8 text-black/80 dark:text-white"/>
-         <span class=" text-blue-800 dark:text-white">Sobre</span>mí
+        Sobre mí
       </h2>
       <AboutMe/>
     </SectionContainer>
   </div>
-  </main>
 </BaseLayout>
