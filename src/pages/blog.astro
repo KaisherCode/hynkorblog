@@ -4,11 +4,11 @@ import BaseLayout from "@/layouts/BaseLayout.astro";
 import BlogPost from "@/components/BlogPost.astro";
 
 const allPosts = await getCollection("posts");
-const pageTitle = "Mi blog de aprendizaje";
+const title = "Mi blog de aprendizaje"
 ---
 
-<BaseLayout pageTitle={pageTitle}>
-	<h2 class="font-extrabold text-2xl mb-2 pl-5 pr-5">{pageTitle}</h2>
+<BaseLayout title={title} description="Aquí es donde publicaré sobre mi viaje de aprendizaje Astro.">
+	<h2 class="font-extrabold text-2xl mb-2 pl-5 pr-5">{title}</h2>
 	<p class="pl-5 pr-5">Aquí es donde publicaré sobre mi viaje de aprendizaje Astro.</p>
 	<section class="p-5 justify-center">
       <article class="lg:grid grid-cols-2 gap-4" >
