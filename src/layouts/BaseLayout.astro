@@ -21,10 +21,11 @@ const { title, description } = Astro.props;
 		<ViewTransitions />
 	</head>
 	<body>
-		<Header />
-		<slot />
-		<Footer />
-		
+    <main class="dark:text-white">
+      <Header />
+      <slot />
+      <Footer />
+    </main>
 	</body>
 </html>
 <script>
@@ -55,6 +56,8 @@ const { title, description } = Astro.props;
     margin: 0 auto;
     width: 100%;
     line-height: 1.5;
+    max-width: 100ch;
+
   }
 
 </style>
