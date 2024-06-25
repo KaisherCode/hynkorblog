@@ -6,7 +6,7 @@ image:
   url: "https://images.unsplash.com/photo-1634634465913-5bb5600942f2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGNzc3xlbnwwfHwwfHx8MA%3D%3D"
   alt: "Código CSS"
 pubDate: 2024-06-08
-tags: ["éxitos","comunidad"]
+tags: ["éxitos","comunidad","tips"]
 ---
 
 En esta publicación tienes 4 trucos o nuevas sintaxis de CSS que quizá no conocias. Y que te pueden ayudar a mejorar tu código y página web.
@@ -14,8 +14,7 @@ Mi favorita es la nueva sintaxis de las Media Queries, porque siempre me confund
 Pero tampoco está mal saber hacer tooltips con solo CSS. 
 
 ## **Sombras en imagen con fondo transparente**
-
-```
+``` 
 ❌
 img{
     box-shadow:
@@ -28,8 +27,7 @@ img{
         0 0 10px rgba(0,0,0,.8)
     )
 }
-
-```
+ ```
 
 ## **Nueva sintaxis para Media Queries**
 
